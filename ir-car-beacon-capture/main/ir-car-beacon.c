@@ -247,8 +247,6 @@ static void button_init() {
 ////////////////////////////////////////////////////////////////////////////////
 
 // Tasks ///////////////////////////////////////////////////////////////////////
-// Timer task -- R (10 seconds), G (10 seconds), Y (2 seconds)
-
 // Button task -- rotate through myIDs
 void button_task(){
   uint32_t io_num;
@@ -349,7 +347,7 @@ void id_task(){
   }
 }
 
-// The main task of this example program
+// Timer task -- R (10 seconds), G (10 seconds), Y (2 seconds)
 static void timer_evt_task(void *arg) {
     while (1) {
         // Create dummy structure to store structure from queue

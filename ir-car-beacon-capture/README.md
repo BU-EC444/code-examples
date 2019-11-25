@@ -5,7 +5,7 @@ Infrared IR/UART beacons for crawler capture the flag!
 Features:
 - Sends UART payload -- | START | myColor | myID | Checksum? |
 - Outputs 38kHz using RMT for IR transmission
-- Onboard LED blinks device ID (myID)
+- Onboard LED blinks corresponding to device ID value (myID)
 - Button press to change device ID
 - RGB LED shows traffic light state (red, green, yellow)
 - Timer controls traffic light state (r - 10s, g - 10s, y - 2s)
@@ -17,7 +17,7 @@ Features:
 |Yellow|'Y'|
 |Green|'G'|
 
-Resistors are fine-tuned for the three colors
+Resistors are fine-tuned for a special RGB LED (behavior will differ for if using individual LEDs)
 
 ### Wiring
 

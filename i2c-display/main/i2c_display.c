@@ -45,6 +45,7 @@ static void i2c_example_master_init(){
     conf.scl_io_num = I2C_EXAMPLE_MASTER_SCL_IO;              // Default SCL pin
     conf.scl_pullup_en = GPIO_PULLUP_ENABLE;                  // Internal pullup
     conf.master.clk_speed = I2C_EXAMPLE_MASTER_FREQ_HZ;       // CLK frequency
+    //conf.clk_flags = 0;                                     // <-- UNCOMMENT IF YOU GET ERRORS (see readme.md)
     err = i2c_param_config(i2c_master_port, &conf);           // Configure
     if (err == ESP_OK) {printf("- parameters: ok\n");}
 

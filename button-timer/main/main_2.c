@@ -1,4 +1,4 @@
-/* Button Interrupt Example #1 - The Timer & Queues Example
+/* Button Interrupt Example #2 - The Timer & Queues Example
 
    This example code is in the Public Domain (or CC0 licensed, at your option.)
 
